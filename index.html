@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ronit Gandhi - Bio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="preload" href="./images/bg01.jpg" as="image" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+		<script>
+			window.addEventListener("DOMContentLoaded", () => {
+				VANTA.BIRDS({
+					el: "#vanta",
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: true,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					scale: 1.0,
+					scaleMobile: 1.0,
+					backgroundAlpha: 0.0,
+					color2: 0xff00f0,
+					wingSpan: 40.0,
+					separation: 100.0,
+					alignment: 77.0,
+					cohesion: 5.0,
+					quantity: 1.0,
+				});
+
+				setTimeout(() => {
+					const main = document.querySelector("main");
+					main.style.opacity = 1;
+					main.style.filter = "blur(0px)";
+				}, 1000);
+			});
+		</script>
+
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩🏻‍💻</text></svg>"
+		/>
+	</head>
+	<body>
+		<div id="vanta"></div>
+		<main class="animated">
+			<header>
+				<img src="./images/ronit.jpg" />
+				<h1>@RonitGandhi</h1>
+			</header>
+			<ul>
+				<li>
+					<a href="https://ronit-portfolio.vercel.app/" target="_blank">
+						<img src="./images/homepage.svg" alt="Homepage" width="20" />
+						Official Website
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/RonitGandhi20" target="_blank">
+						<img src="./images/twitter.svg" alt="Twitter" width="20" />
+						Twitter
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/ronit18" target="_blank">
+						<img src="./images/github.svg" alt="Github" width="20" />
+						GitHub
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/ronit-gandhi-a7bb091b6/"
+						target="_blank"
+					>
+						<img src="./images/linkedin.svg" alt="LinkedIn" width="20" />
+						LinkedIn
+					</a>
+				</li>
+			</ul>
+		</main>
+	</body>
+</html>
